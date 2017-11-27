@@ -21,6 +21,7 @@ Locales['fr'] = {
   ['cook'] = 'préparer',
   ['billing'] = 'facturation',
   ['gears'] = 'matériel',
+  ['gear'] = 'Matériel',
 
   -- Boss Menu
   ['boss_actions'] = 'actions patron',
@@ -42,7 +43,8 @@ Locales['fr'] = {
   ['alert_foodtruck'] = 'alerte Client',
   -- MISC
   ['blip_market'] = 'marché',
-  ['blip_foodtruck'] = 'foodtruck',
+  ['blip_foodtruck'] = '~g~Foodtruck',
+  ['foodtruck'] = 'Foodtruck',
 
   ['take'] = 'appuyez sur ~INPUT_CONTEXT~ pour prendre le',
 
