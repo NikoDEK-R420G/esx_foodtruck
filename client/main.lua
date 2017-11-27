@@ -169,7 +169,7 @@ function OpenFoodTruckActionsMenu()
 	ESX.UI.Menu.CloseAll()
 
 	ESX.UI.Menu.Open(
-		'default', GetCurrentResourceName(), 'foodtruck_actions',
+		'defaultd', GetCurrentResourceName(), 'foodtruck_actions',
 		{
 			title    = _U('blip_foodtruck'),
 			elements = elements
@@ -183,7 +183,7 @@ function OpenFoodTruckActionsMenu()
 				ESX.UI.Menu.CloseAll()
 
 				ESX.UI.Menu.Open(
-					'default', GetCurrentResourceName(), 'spawn_vehicle',
+					'defaultd', GetCurrentResourceName(), 'spawn_vehicle',
 					{
 						title    = _U('vehicles'),
 						elements = elements
@@ -332,10 +332,9 @@ function OpenMobileFoodTruckActionsMenu()
 	ESX.UI.Menu.CloseAll()
 
 	ESX.UI.Menu.Open(
-		'default', GetCurrentResourceName(), 'mobile_foodtruck_actions',
+		'defaultd', GetCurrentResourceName(), 'mobile_foodtruck_actions',
 		{
 			title    = _U('blip_foodtruck'),
-			align    = 'top-left',
 			elements = {
 				{label = _U('billing'), 	value = 'billing'},
 				{label = _U('gears'), 	value = 'gears'}
@@ -453,10 +452,10 @@ end)
 -- Create Blips
 Citizen.CreateThread(function()		
 	local blip = AddBlipForCoord(Config.Zones.Actions.Pos.x, Config.Zones.Actions.Pos.y, Config.Zones.Actions.Pos.z)
-	SetBlipSprite (blip, 479)
+	SetBlipSprite (blip, 88)
 	SetBlipDisplay(blip, 4)
 	SetBlipScale  (blip, 1.0)
-	SetBlipColour (blip, 5)
+	SetBlipColour (blip, 30)
 	SetBlipAsShortRange(blip, true)
 	BeginTextCommandSetBlipName("STRING")
 	AddTextComponentString(_U('blip_foodtruck'))
@@ -466,7 +465,7 @@ Citizen.CreateThread(function()
 	SetBlipSprite (blip, 52)
 	SetBlipDisplay(blip, 4)
 	SetBlipScale  (blip, 1.0)
-	SetBlipColour (blip, 5)
+	SetBlipColour (blip, 30)
 	SetBlipAsShortRange(blip, true)
 	BeginTextCommandSetBlipName("STRING")
 	AddTextComponentString(_U('blip_market'))
